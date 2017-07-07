@@ -1,0 +1,125 @@
+@charset "UTF-8";
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+header {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+}
+header div {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  font-size: 14px;
+  color: #b8b8b8;
+}
+footer {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+.headCon,
+.leftCon {
+  background: url('../images/bg.jpg');
+  width: 100%;
+  height: 100%;
+}
+.headCon header {
+  border-bottom: 1px solid #dadada;
+  text-align: center;
+}
+.headCon footer {
+  border-top: 1px solid #dadada;
+}
+.leftCon {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+.leftCon header span {
+  display: block;
+  width: 20px;
+  height: 40px;
+  background: url("../images/prev.png") no-repeat center;
+  background-size: 100%;
+  margin-left: 10px;
+}
+.leftCon header h3 {
+  color: #e9b114;
+  position: absolute;
+  left: 40px;
+  bottom: 0;
+}
+textarea {
+  width: 90%;
+  height: 100%;
+  padding: 15px;
+  background: transparent;
+  border: none;
+  font-size: 16px;
+}
+main {
+  height: calc(100% - 80px);
+  overflow-x: scroll;
+}
+main::-webkit-scrollbar {
+  display: none;
+}
+.listCon {
+  width: 100%;
+}
+.listCon li {
+  width: 95%;
+  height: 60px;
+  margin: 0 auto;
+  line-height: 25px;
+  border-bottom: 1px solid #dadada;
+  position: relative;
+}
+.listCon li div {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 15px;
+  left: 5px;
+}
+.listCon li div i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 50%;
+}
+.listCon li p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-top: 5px;
+}
+.listCon li span {
+  color: #888;
+}
+footer {
+  position: relative;
+}
+.edit {
+  width: 50px;
+  height: 40px;
+  background: url('../images/edit.png') no-repeat center;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  background-size: 45%;
+}
+.add1 {
+  background: none;
+  color: #e9b114;
+  width: 50px;
+  height: 40px;
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+}
